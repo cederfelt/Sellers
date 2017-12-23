@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Sellers
 {
@@ -51,7 +52,7 @@ namespace Sellers
             return position;
         }
 
-        public void RunSimulation()
+        public async Task RunSimulation()
         {
             long nrSellers = 1;
             long time = 0;
@@ -78,7 +79,6 @@ namespace Sellers
                 time = time + 1;
             }
             Console.WriteLine(time);
-            Console.ReadLine();
         }
 
     }
