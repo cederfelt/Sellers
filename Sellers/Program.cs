@@ -6,7 +6,7 @@ namespace Sellers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var sim = new Simulation(10,10);
         }
     }
 }
